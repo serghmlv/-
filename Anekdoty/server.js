@@ -16,7 +16,7 @@ db.exec(`
 
 app.use(express.json());
 // Раздаем статические файлы вашего сайта (папка build или корень)
-app.use(express.static(path.join(__dirname, 'dist'))); // или текущая папка
+app.use(express.static(path.join(__dirname, 'src'))); // или текущая папка
 
 // Эндпоинт, куда сайт отправляет данные при включении уведомлений
 app.post('/api/sync', (req, res) => {
